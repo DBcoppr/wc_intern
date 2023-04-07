@@ -1,0 +1,97 @@
+h1{
+    padding-top: 20px;
+    font-size: 64px;
+    padding-bottom: 15px;
+    font-weight: 700;
+    color: #423f3f;
+}
+.fav-title{
+    margin-top: 20px;
+}
+#searchbar{
+    width: 30%;
+    padding: 5px 10px;
+}
+.movie-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 100px 100px;
+    gap:40px 20px;
+    padding-top: 26px;
+}
+.movie{
+    position: relative;
+    width: 20%;
+    min-width: 250px;
+    height: 300px;
+    background-color: #d1c1c1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+.movie img{
+   width: 100px;
+   height: auto;
+}
+.movie p{
+    font-size: 18px;
+    font-weight: 500;
+}
+.header-btn{
+    gap: 42px;
+    margin-top: 28px;
+    display: flex;
+    justify-content: center;
+}
+.header-btn button{
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 20px;
+
+    border-bottom: 2px solid black;
+}
+.header-btn button:hover{
+    color: #2d4e9d;
+    border-bottom: 2px solid white;
+}
+.header-btn button:focus{
+    color: #2d4e9d;
+    outline: none;
+    border-bottom: 2px solid white;
+}
+.fav-btn{
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    cursor: pointer;
+    background: #0481ab;
+    color: white;
+    transform: translateX(-50%);
+    width: 65%;
+}
+.fav-btn:hover{
+    background: #18b3e7;
+}
+.fav-btn:focus{
+    outline: none;
+}
+
+@media screen and (max-width:600px) {
+    
+    .movie-container{
+        padding:30px 20px
+    }
+    main h1{
+font-size: 35px;
+
+    }
+    #searchbar{
+        width: 80%;
+    }
+}
